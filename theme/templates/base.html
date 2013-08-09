@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.min.css" type="text/css" />
+    <link href="{{ SITEURL }}/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -30,8 +31,7 @@
         font-size: 6pt;
      }
     </style>
-    <link href="{{ SITEURL }}/theme/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link href="{{ SITEURL }}/theme/css/font-awesome.css" rel="stylesheet">
+        <link href="{{ SITEURL }}/theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="{{ SITEURL }}/theme/css/pygments.css" rel="stylesheet">
 
@@ -70,6 +70,7 @@
                   <li><a href="{{ link }}">{{ title }}</a></li>
               {% endfor %}
               {% if DISPLAY_PAGES_ON_MENU %}
+                          <li class="divider-vertical"></li>
               {% for page in PAGES %}
                 <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
               {% endfor %}
@@ -94,29 +95,31 @@
       </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
-        <div class="span9" id="content">
+        <div class="span10" id="content">
             {% block content %}
             {% endblock %}
         </div><!--/span-->
 
-                <div class="span3 well sidebar-nav" id="sidebar">
+        <div class="span2 sidebar-nav" id="sidebar">
             {% include 'sidebar.html' %}
         </div><!--/.well -->
 
       </div><!--/row-->
 
-      <hr>
-
       <footer>
-        <address id="about">
-                Proudly powered by <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
-                                which takes great advantage of <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
-        </address><!-- /#about -->
+      <div class="row">
+        <div class="span1 offset4">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/au/deed.en_GB"><img alt="Creative Commons Licence" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/au/88x31.png" /></a>
+        </div>
+      </div>
 
-        <p>The theme is from <a href="http://twitter.github.com/bootstrap/">Bootstrap from Twitter <i class="icon-external-link"></i></a>,
-                   and <a href="http://fortawesome.github.com/Font-Awesome/">Font-Awesome <i class="icon-external-link"></i></a>, thanks!</p>
+      <div class="row">
+        <div class="span8 offset1">
+            <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">{{ SITENAME }}</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="{{ SITEURL }}" property="cc:attributionName" rel="cc:attributionURL">{{ AUTHOR }}</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/au/deed.en_GB">Creative Commons Attribution-ShareAlike 3.0 Australia License</a>.
+        </div>
+      </div>
       </footer>
 
     </div><!--/.fluid-container-->
