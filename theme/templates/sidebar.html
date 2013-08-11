@@ -10,12 +10,12 @@
     <li><a href="{{ link }}"><i class="icon-{{ name }}-sign icon-large"></i>{{ name }}</a></li>
 {% endfor %}
 {% if AUTHOR_EMAIL %}
-    <li><a href="mailto:{{ AUTHOR_EMAIL }}"><i class="icon-envelope"></i>email</a></li>
+    <li><a href="mailto:{{ AUTHOR_EMAIL }}"><i class="icon-envelope icon-large"></i>email</a></li>
 {% endif %}
 {% endif %}
 
 {% if LINKS %}
-<li class="nav-header"><h4><i class="icon-cogs"></i>Powered</h4></li>
+<li class="nav-header"><h4><i class="icon-cogs"></i>Powered&nbsp;By</h4></li>
 {% for name, link in LINKS %}
     <li><a href="{{ link }}"><i class="icon-cog"></i>{{ name }}</a></li>
 {% endfor %}

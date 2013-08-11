@@ -97,12 +97,12 @@
 
     <div class="container">
       <div class="row">
-        <div class="span10" id="content">
+        <div class="span9" id="content">
             {% block content %}
             {% endblock %}
         </div><!--/span-->
 
-        <div class="span2 sidebar-nav" id="sidebar">
+        <div class="span3 sidebar-nav hidden-phone" id="sidebar">
             {% include 'sidebar.html' %}
         </div><!--/.well -->
 
@@ -110,13 +110,13 @@
 
       <footer>
       <div class="row">
-        <div class="span1 offset4">
+        <div class="span12 pagination-centered">
             <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/au/deed.en_GB"><img alt="Creative Commons Licence" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/au/88x31.png" /></a>
         </div>
       </div>
 
       <div class="row">
-        <div class="span8 offset1">
+        <div class="span12 pagination-centered">
             <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">{{ SITENAME }}</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="{{ SITEURL }}" property="cc:attributionName" rel="cc:attributionURL">{{ AUTHOR }}</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/au/deed.en_GB">Creative Commons Attribution-ShareAlike 3.0 Australia License</a>.
         </div>
       </div>
