@@ -5,7 +5,8 @@ from __future__ import unicode_literals
 AUTHOR = 'Aaron Iles'
 AUTHOR_EMAIL = 'aaron.iles@gmail.com'
 SITENAME = 'Predictably Random'
-SITEURL = 'http://www.aaroniles.net'
+# SITEURL = 'http://www.aaroniles.net'
+SITEURL = 'http://mysterious-atoll-5222.herokuapp.com'
 
 TIMEZONE = 'Australia/Canberra'
 
@@ -32,7 +33,7 @@ TRANSLATION_FEED_RSS = None
 LINKS =  (('python', 'http://python.org'),
           ('pelican', 'http://getpelican.com'),
           ('bootstrap', 'http://getbootstrap.com'),
-          ('font awesome', 'http://fortawesome.github.io/'),
+          ('font awesome', 'http://fortawesome.github.io/Font-Awesome/'),
           ('travis', 'https://travis-ci.org'),
           ('heroku', 'https://www.heroku.com'))
 
@@ -45,10 +46,15 @@ SOCIAL = (('twitter', 'https://twitter.com/aliles'),
 
 # Theme
 THEME = 'theme'
-DISQUS_SITENAME = 'aaronilesnet'
+DISQUS_SITENAME = 'mysterious-atoll-5222'
 GOOGLE_ANALYTICS = 'UA-43019090-1'
+# GITHUB_URL = 'https://github.com/aliles'
 # GOOGLE_CUSTOM_SEARCH_SIDEBAR = '011005344798390208422'
-GITHUB_URL = 'https://github.com/aliles'
+
+# DISQUS_SITENAME = 'aaronilesnet'
+# GOOGLE_ANALYTICS = 'UA-43019090-1'
+# GITHUB_URL = 'https://github.com/aliles'
+# GOOGLE_CUSTOM_SEARCH_SIDEBAR = '011005344798390208422'
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
