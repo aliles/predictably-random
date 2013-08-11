@@ -1,0 +1,10 @@
+language: python
+python: 3.3
+install: pip install -r requirements.txt
+script: make html
+deploy:
+  provider: heroku
+  api_key:
+    secure: njfO2YhpRwc7ANGPOGgiIa1/Rn+ROZjyMSc2/huvh/2gmhYnB9d2CEHiYNBWKxyyFZSxpIa8FZeRK5ly1o0YQE96VKeTHM042j92KfvkzzCGnm2dCaKYbyB5wBSBNxWvLaGBXaVF9TXZtzrjJgsg0xlki5JtQ93VE5pT+Fk1EWk=
+notifications:
+  email: aaron.iles+travis-ci@gmail.com
