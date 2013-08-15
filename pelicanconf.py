@@ -5,8 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Aaron Iles'
 AUTHOR_EMAIL = 'aaron.iles@gmail.com'
 SITENAME = 'Predictably Random'
-# SITEURL = 'http://www.aaroniles.net'
-SITEURL = 'http://mysterious-atoll-5222.herokuapp.com'
+SITEURL = 'http://www.aaroniles.net'
 
 TIMEZONE = 'Australia/Canberra'
 
@@ -46,13 +45,8 @@ SOCIAL = (('twitter', 'https://twitter.com/aliles'),
 
 # Theme
 THEME = 'theme'
-DISQUS_SITENAME = 'mysterious-atoll-5222'
+DISQUS_SITENAME = 'aaronilesnet'
 GOOGLE_ANALYTICS = 'UA-43019090-1'
-# GITHUB_URL = 'https://github.com/aliles'
-# GOOGLE_CUSTOM_SEARCH_SIDEBAR = '011005344798390208422'
-
-# DISQUS_SITENAME = 'aaronilesnet'
-# GOOGLE_ANALYTICS = 'UA-43019090-1'
 # GITHUB_URL = 'https://github.com/aliles'
 # GOOGLE_CUSTOM_SEARCH_SIDEBAR = '011005344798390208422'
 
