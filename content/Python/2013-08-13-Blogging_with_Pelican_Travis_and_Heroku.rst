@@ -25,10 +25,13 @@ my blog, I'm using Travis for `continuous deployment`_ to `Heroku`_. Travis
 makes continuous `Heroku deployment`_ reasonably simple.
 
 Heroku is generous to offer all each up enough free credits to run a web dynamo
-for free. With the `Pelican buildpack`_ this is easily enough to meet the
-demand for this blog. (Yes, all six of you). Heroku applications running on
-their free tier will enter a `sleep state`_ after an hour of inactivity, the
-couple of seconds delay before loading doesn't greatly concern me.
+for free. I ultimately forked the `Pelican buildpack`_ and used my own
+`buildpack`_ to ensure that the content directory is set correctly. (Otherise
+pages fail to build) With the `Pelican buildpack`_ this is easily enough to
+meet the demand for this blog. (Yes, all six of you). Heroku applications
+running on their free tier will enter a `sleep state`_ after an hour of
+inactivity, the couple of seconds delay before loading doesn't greatly concern
+me.
 
 To acknowledge the projects and companies that have enabled this blog, I have
 created a *Powered By* section in the side bar of this site. Considering the
@@ -46,6 +49,7 @@ setting this new blog up.
 .. _Python: http://python.org/
 .. _Travis: https://travis-ci.org/
 .. _Tumblr blog: http://aliles.tumblr.com/
+.. _buildpack: https://github.com/aliles-heroku/heroku-buildpack-pelican
 .. _bikeshedding: https://en.wiktionary.org/wiki/bikeshedding
 .. _bootstrap2: https://github.com/getpelican/pelican-themes/tree/master/bootstrap2
 .. _continuous deployment: http://about.travis-ci.org/blog/2013-07-09-introducing-continuous-deployment-to-heroku/
