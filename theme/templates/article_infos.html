@@ -1,7 +1,7 @@
 <footer class="post-info">
 Posted on {{ article.locale_date }}
 {% if article.author %}
-by <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+by <a href="{{ SITEURL }}/{{ article.author.url }}"><span style="white-space:nowrap;">{{ article.author }}</span></a>
 {% endif %}
 in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
 
