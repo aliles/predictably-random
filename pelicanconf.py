@@ -28,13 +28,14 @@ CATEGORY_FEED_ATOM = 'feeds/%s.rss.xml'
 TRANSLATION_FEED_ATOM = None
 TRANSLATION_FEED_RSS = None
 
-# Blogroll
+# Powered By
 LINKS =  (('python', 'http://python.org'),
           ('pelican', 'http://getpelican.com'),
           ('bootstrap', 'http://getbootstrap.com'),
           ('font awesome', 'http://fortawesome.github.io/Font-Awesome/'),
           ('travis', 'https://travis-ci.org'),
-          ('heroku', 'https://www.heroku.com'))
+          ('heroku', 'https://www.heroku.com'),
+          ('ifttt', 'https://ifttt.com'))
 
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/aliles'),
