@@ -50,6 +50,7 @@ DISQUS_SITENAME = 'aaronilesnet'
 GOOGLE_ANALYTICS = 'UA-43019090-1'
 # GITHUB_URL = 'https://github.com/aliles'
 # GOOGLE_CUSTOM_SEARCH_SIDEBAR = '011005344798390208422'
+# TWITTER_USERNAME = 'aliles'
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
