@@ -5,11 +5,32 @@ This is a list of projects that I am currently, or have previously, worked on.
 
 .. raw:: html
 
+    <h2>reStructuredText Viewer</h2>
+    <p><i>Online editor and viewer for reStructuredText documents</i></p>
+
+    <p>Web application to enable editing and preview of reStructuredText using
+    the docutils package. Implemented using the Flask web framework.</p>
+
+    <ul class="nav nav-list">
+      <li>
+        <a href="http://rst.aaroniles.net">
+          <i class="icon-home icon-large"></i>Online editor</li>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/aliles-heroku/rstviewer">
+          <i class="icon-download icon-large"></i>Download</li>
+        </a>
+      </li>
+    </ul>
+
+.. raw:: html
+
     <h2>Begins</h2>
     <p><i>Command line programs for busy developers.</i></p>
 
     <p>Simplifying the creation of Python command line programs, Begins
-    automatically performans command line parsing from function signatures.
+    automatically performs command line parsing from function signatures.
     The developer decorates a program's 'main' function and Begins handles
     parsing the command line and calling the main function when the program is
     run. Begins also supports sub-commands as well as configuring the logging
@@ -38,7 +59,7 @@ This is a list of projects that I am currently, or have previously, worked on.
     <p>This is a backport the sections of the Python standard libraries inspect
     module that implement function signatures. It is functionally equivalent to
     the standard library. Changes are limited to those necessary for
-    compatability.</p>
+    compatibility.</p>
 
     <ul class="nav nav-list">
       <li>
@@ -66,7 +87,7 @@ This is a list of projects that I am currently, or have previously, worked on.
 
     <p>Implemented using ctypes, Filemagic simplifies the identification of
     file types from magic strings by Python applications. Developers can
-    identify files from filenames or string buffers as well as suplying their
+    identify files from filenames or string buffers as well as supplying their
     own magic string files.</p>
 
     <ul class="nav nav-list">
