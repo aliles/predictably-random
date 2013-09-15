@@ -45,6 +45,7 @@ SOCIAL = (('twitter', 'https://twitter.com/aliles'),
           ('linkedin', 'https://www.linkedin.com/in/aliles'))
 
 # Theme
+STATIC_PATHS = ['images', 'documents']
 THEME = 'theme'
 DISQUS_SITENAME = 'aaronilesnet'
 GOOGLE_ANALYTICS = 'UA-43019090-1'

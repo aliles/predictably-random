@@ -14,6 +14,10 @@ my open source projects. The most finished of these are listed on my `Projects
 less complete projects, is hosted on my `Github <https://github.com/aliles>`_
 site.
 
+You may use my GnuPG `public key <|filename|/documents/8C01DD2E.asc>`_ when
+contact me by email. It is also available from the `PGP public key servers`_.
+The key's fingerprint is FD10 EAA0 22E0 B3AF 20AA 1DAC **125F 3653 8C01 DD2E**.
+
 .. raw:: html
 
     <div class="row">
@@ -28,3 +32,5 @@ site.
 
       </div>
     </div>
+
+.. _PGP public key servers: http://keys.gnupg.net:11371/pks/lookup?search=aaron.iles@gmail.com
