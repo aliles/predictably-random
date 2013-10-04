@@ -24,6 +24,7 @@ The key's fingerprint is FD10 EAA0 22E0 B3AF 20AA 1DAC **125F 3653 8C01 DD2E**.
       <div class="span9 pagination-centered" style="margin-top: 10px; margin-bottom: 10px;">
 
 .. image:: |filename|../images/alexandra_and_isabella.jpg
+   :alt: Alexandra and Isabella
    :class: img-circle
    :width: 33 %
    :align: center
