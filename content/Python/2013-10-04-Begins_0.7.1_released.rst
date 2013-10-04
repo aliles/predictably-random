@@ -1,0 +1,55 @@
+Begins 0.7.1 released
+#####################
+
+I released version 0.7 and 0.7.1 of `Begins`_ this week. 0.7.1 was a bug fix
+release for an issue discovered shortly after releasing 0.7. A number of
+significant features were delivered in 0.7, including:
+
+* `automatic type conversion`_
+* `command line flags`_
+* `multiple sub commands`_
+* `program execution context`_
+
+These new features enable writing a simple `Flask`_ web applications like:
+
+.. code:: python
+
+    import begin
+    from twoslug import app
+
+    @begin.start(auto_convert=True)
+    def main(host='127.0.0.1', port=8000, debug=False):
+        app.run(host=host, port=port, debug=debug)
+
+Begins both ensures that the correct, expected, types are passed to the main
+function as well as presenting ``debug`` as a command line flag rather than an
+option argument. The help output for the application is:
+
+.. code::
+
+    usage: run.py [--help] [--host HOST] [--port PORT] [--debug]
+
+    optional arguments:
+      --help                show this help message and exit
+      --host HOST, -h HOST  (default: 127.0.0.1)
+      --port PORT, -p PORT  (default: 8000)
+      --debug, -d           (default: False)
+
+This is the actual `development server`_ I have been using while developing
+`TwoSlug`_.
+
+Begins really should have had a beta release by now. (It's currently still in
+alpha). The only thing preventing a beta is the lack of proper documentation
+hosted on `Read The Docs`_. My intention is to focus solely on documentation
+for the upcoming 0.8 release, which will be the first beta. That's my intention
+anyway, the strength of my convictions remains to be seen.
+
+.. _Begins: https://pypi.python.org/pypi/begins/0.7.1
+.. _Flask: http://flask.pocoo.org/
+.. _Read The Docs: http://readthedocs.org/
+.. _TwoSlug: http://twoslug.aaroniles.net/
+.. _development server: https://github.com/aliles-heroku/twoslug/blob/master/run.py
+.. _automatic type conversion: https://github.com/aliles/begins/issues/12
+.. _command line flags: https://github.com/aliles/begins/issues/10
+.. _multiple sub commands: https://github.com/aliles/begins/issues/16
+.. _program execution context: https://github.com/aliles/begins/issues/24
